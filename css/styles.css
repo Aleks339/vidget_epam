@@ -90,6 +90,10 @@ body{
   text-align: center;
   margin-top: 14px;
 }
+.graph{
+  margin-left: 40px;
+  margin-top: 2px;
+}
 
 .icon{
 	background: url(../img/icons/sprites.png) no-repeat;
