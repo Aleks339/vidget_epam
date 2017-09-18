@@ -98,7 +98,28 @@ body{
 }
 
 .icon{
-	background: url(../img/icons/sprites.png) no-repeat;
+	background: url("../img/icons/css_sprites.png") no-repeat;
+}
+.day1 > .sun {
+    width: 40px; height: 40px;
+    background: url('../img/icons/css_sprites.png') -75px -10px;
+    position: absolute;
+    top: 265px;
+    left: 337px;
+}
+.day2 > .sun_and_cloud {
+    width: 45px; height: 40px;
+    background: url('../img/icons/css_sprites.png') -10px -10px;
+    position: absolute;
+    top: 265px;
+    left: 415px;
+}
+.day3 > .sun_and_cloud {
+    width: 45px; height: 40px;
+    background: url('../img/icons/css_sprites.png') -10px -10px;
+    position: absolute;
+    top: 265px;
+    left: 495px;
 }
 .day1{
   float: left;
