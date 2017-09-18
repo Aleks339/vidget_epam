@@ -93,8 +93,50 @@ body{
 .graph{
   margin-left: 40px;
   margin-top: 2px;
+  border-bottom: 1px solid rgb(119, 25, 33);
+  padding-bottom: 17px;
 }
 
 .icon{
 	background: url(../img/icons/sprites.png) no-repeat;
+}
+.day1{
+  float: left;
+  width: 96px;
+  text-align: center;
+  margin-top: 79px;
+  margin-left: 16px;
+  color: rgb(119, 25, 33);
+}
+.day2{
+  float: left;
+  width: 96px;
+  text-align: center;
+  margin-top: 79px;
+  margin-left: -16px;
+  color: rgb(119, 25, 33);
+}
+.day3{
+  float: left;
+  width: 96px;
+  text-align: center;
+  margin-top: 79px;
+  margin-left: -18px;
+  color: rgb(119, 25, 33);
+
+}
+.week{
+  border-bottom: 1px solid rgb(119, 25, 33);
+  padding-bottom: 11px;
+}
+.morning_temperature{
+  padding-top: 14px;
+  padding-left: 9px;
+  word-spacing: -2px;
+}
+.evening_temperature{
+  padding-top: 10px;
+  padding-left: 7px;
+  word-spacing: -2px;
+  color: black;
 }
