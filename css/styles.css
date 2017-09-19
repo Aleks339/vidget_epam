@@ -14,14 +14,18 @@
   src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+html{
+  height: 100%;
+}
 body{
   background-image: url("../img/bg_tokyo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
 }
 .widget {
-  background-image: url("../img/div_tokyo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -34,30 +38,28 @@ body{
   height: 440px;
 }
 .left-side{
+  background-image: url("../img/div_tokyo.jpg");
   width: 50%;
   float: left;
 }
 .right-side{
+  background-color: white;
   width: 50%;
+  height: 100%;
   float: right;
 }
 .sun_wrapper{
   height: 243px;
 }
-.sun_white{
-  margin: 43px 75px;
-}
 #rect_brown{
-  background-color: rgb(46, 28, 37);
-  opacity: 0.89;
+  background-color: rgba(46, 28, 37, 0.89);
   margin-left: 0;
   margin-top: 0;
   width: 290px;
-  height: 73px;
+  height: 71px;
 }
 #rect_red{
-  background-color: rgb(119, 25, 33);
-  opacity: 0.89;
+  background-color: rgba(119, 25, 33, 0.89);
   margin-left: 0;
   margin-top: 0;
   width: 290px;
@@ -65,18 +67,16 @@ body{
 }
 .sunny {
   font-size: 34px;
-  font-family: 'Dosis', sans-serif;
   color: rgb(255, 255, 255);
   line-height: 1.333;
   text-align: center;
   vertical-align: middle;
-  padding-top: 21px;
+  padding-top: 23px;
 }
 .tokyo_wen{
   font-size: 21px;
   word-spacing: 1px;
   letter-spacing: 0px;
-  font-family: 'Dosis', sans-serif;
   color: rgb(255, 255, 255);
   line-height: 2.182;
   text-align: center;
@@ -85,7 +85,6 @@ body{
 }
 .temperature{
   font-size: 101px;
-  font-family: 'Dosis', sans-serif;
   font-weight: 200;
   font-style: normal;
   color: rgb(119, 25, 33);
@@ -98,7 +97,9 @@ body{
   border-bottom: 1px solid rgb(119, 25, 33);
   padding-bottom: 17px;
 }
-
+.future_temperature{
+  list-style: none;
+}
 .icon{
 	background: url("../img/icons/css_sprites.png") no-repeat;
 }
@@ -106,47 +107,30 @@ body{
     width: 40px; height: 40px;
     background: url('../img/icons/css_sprites.png') -75px -10px;
     position: absolute;
-    top: 265px;
-    left: 337px;
+    top: 267px;
+    left: 335px;
 }
 .day2 > .sun_and_cloud {
     width: 45px; height: 40px;
     background: url('../img/icons/css_sprites.png') -10px -10px;
     position: absolute;
-    top: 265px;
-    left: 415px;
+    top: 267px;
+    left: 414px;
 }
 .day3 > .sun_and_cloud {
     width: 45px; height: 40px;
     background: url('../img/icons/css_sprites.png') -10px -10px;
     position: absolute;
-    top: 265px;
-    left: 495px;
+    top: 267px;
+    left: 493px;
 }
-.day1{
+.day{
   float: left;
   width: 96px;
   text-align: center;
-  margin-top: 79px;
-  margin-left: 16px;
+  margin-top: 63px;
+  margin-left: -25px;
   color: rgb(119, 25, 33);
-}
-.day2{
-  float: left;
-  width: 96px;
-  text-align: center;
-  margin-top: 79px;
-  margin-left: -16px;
-  color: rgb(119, 25, 33);
-}
-.day3{
-  float: left;
-  width: 96px;
-  text-align: center;
-  margin-top: 79px;
-  margin-left: -18px;
-  color: rgb(119, 25, 33);
-
 }
 .week{
   border-bottom: 1px solid rgb(119, 25, 33);
@@ -155,13 +139,18 @@ body{
   margin-right: 21px;
 }
 .morning_temperature{
-  padding-top: 14px;
+  padding-top: 11px;
   padding-left: 9px;
   word-spacing: -2px;
 }
 .evening_temperature{
-  padding-top: 10px;
+  padding-top: 8px;
   padding-left: 7px;
   word-spacing: -2px;
   color: black;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
