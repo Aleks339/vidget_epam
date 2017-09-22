@@ -50,7 +50,8 @@ body{
   box-sizing: border-box;
 }
 .sun_wrapper{
-  height: 243px;
+  height: 241px;
+  background: url(../img/icons/sun_white.png) center no-repeat;
 }
 #rect_brown{
   background-color: rgba(46, 28, 37, 0.89);
@@ -95,7 +96,7 @@ body{
   padding-bottom: 16px;
   margin-top: 4px;
   border-bottom: 1px solid rgb(119, 25, 33);
-  border-top: 1px solid rgb(119, 25, 33);  
+  border-top: 1px solid rgb(119, 25, 33);
 }
 .future_temperature{
   list-style: none;
