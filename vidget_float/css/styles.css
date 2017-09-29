@@ -14,48 +14,54 @@
   src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+html{
+  height: 100%;
+}
 body{
   background-image: url("../img/bg_tokyo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
 }
 .widget {
-  background-image: url("../img/div_tokyo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top:73px;
-  left: 102px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
   width: 580px;
   height: 440px;
 }
 .left-side{
+  background-image: url("../img/div_tokyo.jpg");
   width: 50%;
   float: left;
 }
 .right-side{
+  background-color: white;
   width: 50%;
+  height: 100%;
   float: right;
+  padding: 12px 40px 40px 40px;
+  box-sizing: border-box;
 }
 .sun_wrapper{
-  height: 243px;
-}
-.sun_white{
-  margin: 43px 75px;
+  height: 241px;
+  background: url(../img/icons/sun_white.png) center no-repeat;
 }
 #rect_brown{
-  background-color: rgb(46, 28, 37);
-  opacity: 0.89;
+  background-color: rgba(46, 28, 37, 0.89);
   margin-left: 0;
   margin-top: 0;
   width: 290px;
-  height: 73px;
+  height: 71px;
 }
 #rect_red{
-  background-color: rgb(119, 25, 33);
-  opacity: 0.89;
+  background-color: rgba(119, 25, 33, 0.89);
   margin-left: 0;
   margin-top: 0;
   width: 290px;
@@ -63,18 +69,16 @@ body{
 }
 .sunny {
   font-size: 34px;
-  font-family: 'Dosis', sans-serif;
   color: rgb(255, 255, 255);
   line-height: 1.333;
   text-align: center;
   vertical-align: middle;
-  padding-top: 21px;
+  padding-top: 23px;
 }
 .tokyo_wen{
   font-size: 21px;
   word-spacing: 1px;
   letter-spacing: 0px;
-  font-family: 'Dosis', sans-serif;
   color: rgb(255, 255, 255);
   line-height: 2.182;
   text-align: center;
@@ -82,15 +86,61 @@ body{
   padding-top: 29px;
 }
 .temperature{
-  font-size: 101px;
-  font-family: 'Dosis', sans-serif;
+  font-size: 100px;
   font-weight: 200;
   font-style: normal;
   color: rgb(119, 25, 33);
-  text-align: center;
-  margin-top: 14px;
 }
-
+.graph{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 4px;
+  border-bottom: 1px solid rgb(119, 25, 33);
+  border-top: 1px solid rgb(119, 25, 33);
+}
+.future_temperature{
+  list-style: none;
+  padding-left: 0;
+}
 .icon{
-	background: url(../img/icons/sprites.png) no-repeat;
+	background: url("../img/icons/css_sprites.png") no-repeat;
+  display: inline-block;
+}
+.sun {
+    width: 40px; height: 40px;
+    background: url('../img/icons/css_sprites.png') -75px -10px;
+}
+.sun_and_cloud {
+    width: 45px; height: 40px;
+    background: url('../img/icons/css_sprites.png') -10px -10px;
+}
+.day{
+  float: left;
+  text-align: center;
+  margin-top: 5px;
+  color: rgb(119, 25, 33);
+  width: 50px;
+  margin-right: 30px;
+}
+.day:last-child{
+  margin-right: 0;
+}
+.week{
+  border-bottom: 1px solid rgb(119, 25, 33);
+  padding-bottom: 12px;
+  padding-top: 12px
+}
+.morning_temperature{
+  padding-top: 12px;
+  word-spacing: -2px;
+}
+.evening_temperature{
+  padding-top: 8px;
+  word-spacing: -2px;
+  color: black;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
