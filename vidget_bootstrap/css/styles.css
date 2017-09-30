@@ -18,26 +18,26 @@ body {
     background-image: url(../img/bg_tokyo.jpg);
     background-size: cover;
     height: 100%;
-    font-family: Dosis, sans-serif;
+    font-family: 'Dosis', sans-serif;
     background-repeat: no-repeat;
     margin: 0px;
 }
 .widget.container {
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
     width: 580px;
-    height: 440px;
+    height: 459px;
 }
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
-    width: 50%;
-}
-.widget_right-side {
-    width: 50%;
 }
 .widget_left-side--sun-wrapper {
-    height: 305px;
+    height: 242px;
     background: url(../img/icons/sun_white.png) center no-repeat;
 }
 .widget_left-side--rect-brown {
@@ -45,7 +45,7 @@ body {
     margin-left: 0;
     margin-top: 0;
     width: 290px;
-    height: 71px;
+    height: 92px;
     font-size: 34px;
     color: rgb(255, 255, 255);
     line-height: 1.333;
@@ -58,7 +58,7 @@ body {
     margin-left: 0;
     margin-top: 0;
     width: 290px;
-    height: 74px;
+    height: 105px;
     font-size: 21px;
     word-spacing: 1px;
     letter-spacing: 0px;
@@ -66,39 +66,39 @@ body {
     line-height: 2.182;
     text-align: center;
     vertical-align: middle;
-    padding-top: 29px;
+    padding-top: 31px;
 }
 .widget_right-side {
     background-color: white;
     height: 100%;
-    padding: 12px 40px 40px 40px;
+    padding: 10px 41px 22px 37px;
     box-sizing: border-box;
 }
 .widget_right-side--temperature {
     font-size: 100px;
     font-weight: 200;
     font-style: normal;
+    text-align: center;
     color: rgb(119, 25, 33);
 }
 .widget_right-side--graph {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-top: 4px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-top: 0px;
     border-bottom: 1px solid rgb(119, 25, 33);
     border-top: 1px solid rgb(119, 25, 33);
 }
 .widget_right-side--future-temperature{
   padding-left: 0px;
-}
-.col-md-4{
-  margin:0!important; /*covering of styles of bootstrap */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .widget_right-side--day {
-    text-align: center;
-    margin-top: 5px;
-    color: rgb(119, 25, 33);
-    width: 50px;
-    margin-right: 30px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 0;
+  margin-top: 0px;
+  color: rgb(119, 25, 33);
 }
 .widget_right-side--icon {
     background: url(../img/icons/css_sprites.png) no-repeat;
@@ -114,8 +114,26 @@ body {
     height: 40px;
     background: url(../img/icons/css_sprites.png) -10px -10px;
 }
+.widget_right-side--morning-temperature {
+    padding-top: 12px;
+    word-spacing: -2px;
+}
+.widget_right-side--evening-temperature {
+    padding-top: 8px;
+    word-spacing: -2px;
+    color: black;
+}
 .widget_right-side--week {
     border-bottom: 1px solid rgb(119, 25, 33);
     padding-bottom: 12px;
     padding-top: 12px;
+}
+@media (max-width:767px){
+  .widget.container{
+    width: 290px;
+    height: auto;
+    position: static;
+    transform: translate(0, 0);
+    margin: 0 auto;
+  }
 }

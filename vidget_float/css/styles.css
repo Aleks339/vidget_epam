@@ -18,8 +18,7 @@ html{
   height: 100%;
 }
 body{
-  background-image: url("../img/bg_tokyo.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/bg_tokyo.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   margin: 0;
@@ -143,4 +142,23 @@ body{
     content: "";
     display: table;
     clear: both;
+}
+@media (max-width:700px){
+  body{
+    width:100%;
+  }
+  .widget{
+    width: 290px;
+    height: auto;
+    position: static;
+    transform: translate(0, 0);
+    margin: 0 auto;
+  }
+  .right-side{
+    width:100%;
+    float: left;
+  }
+  .left-side{
+    width:100%;
+  }
 }
