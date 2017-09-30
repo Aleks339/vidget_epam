@@ -35,14 +35,16 @@ body {
     justify-content: center;
     align-items: center;
     background-size: cover;
+    flex-wrap: wrap;
     width: 580px;
     height: 440px;
     background-repeat: no-repeat;
 }
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
-    width: 50%;
     display: flex;
+    flex: 5;
+    order: 0;
     flex-direction: column;
 }
 .widget_left-side--sun-wrapper {
@@ -75,7 +77,8 @@ body {
 }
 .widget_right-side {
     background-color: white;
-    width: 50%;
+    flex: 5;
+    order: 1;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -93,8 +96,8 @@ body {
   padding-bottom: 16px;
   margin-top: 4px;
   margin-bottom: 7px;
-    border-bottom: 1px solid rgb(119, 25, 33);
-    border-top: 1px solid rgb(119, 25, 33);
+  border-bottom: 1px solid rgb(119, 25, 33);
+  border-top: 1px solid rgb(119, 25, 33);
 }
 .widget_right-side--future-temperature {
     display: flex;
@@ -133,22 +136,17 @@ body {
     height: 40px;
     background: url(../img/icons/css_sprites.png) -10px -10px;
 }
-@media (max-width:700px){
-  body{
-    width:100%;
-  }
+@media (max-width:700px) {
   .widget{
-    width: 290px;
-    height: auto;
-    position: static;
-    transform: translate(0, 0);
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 796px;
+    margin-top: 150px;
   }
-  .right-side{
-    width:100%;
-    float: left;
+  .widget_right-side{
+    order: 1;
   }
-  .left-side{
-    width:100%;
+  .widget_left-side{
+    order: 0;
   }
 }
