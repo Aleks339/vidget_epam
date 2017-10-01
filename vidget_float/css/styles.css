@@ -130,9 +130,7 @@ body{
 }
 @media (min-width:1150px) {
   .widget {
-    padding: 20px;
     position: absolute;
-    top: 20%;
     left: 25%;
   }
   .widget_left-side{
