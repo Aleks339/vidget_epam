@@ -17,24 +17,21 @@
 body {
     background-image: url(../img/bg_tokyo.jpg);
     background-size: cover;
-    height: 100%;
     font-family: 'Dosis', sans-serif;
-    background-repeat: no-repeat;
-    margin: 0px;
+    color: rgb(119, 25, 33);
+    text-align: center;
 }
-.widget.container {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    width: 580px;
-    height: 459px;
+.widget.container{
+  width: 290px;
+  height: auto;
+  position: static;
+  transform: translate(0, 0);
+  margin: 0 auto;
 }
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
+    border: 1px solid rgba(46, 28, 37, 0.89);\
+    box-sizing: border-box;
 }
 .widget_left-side--sun-wrapper {
     height: 242px;
@@ -42,44 +39,31 @@ body {
 }
 .widget_left-side--rect-brown {
     background-color: rgba(46, 28, 37, 0.89);
-    margin-left: 0;
-    margin-top: 0;
     width: 290px;
     height: 92px;
     font-size: 34px;
     color: rgb(255, 255, 255);
     line-height: 1.333;
-    text-align: center;
-    vertical-align: middle;
     padding-top: 23px;
 }
 .widget_left-side--rect-red {
     background-color: rgba(119, 25, 33, 0.89);
-    margin-left: 0;
-    margin-top: 0;
     width: 290px;
     height: 105px;
     font-size: 21px;
     word-spacing: 1px;
-    letter-spacing: 0px;
     color: rgb(255, 255, 255);
     line-height: 2.182;
-    text-align: center;
-    vertical-align: middle;
     padding-top: 31px;
 }
 .widget_right-side {
     background-color: white;
-    height: 100%;
     padding: 10px 41px 22px 37px;
-    box-sizing: border-box;
 }
 .widget_right-side--temperature {
     font-size: 100px;
     font-weight: 200;
-    font-style: normal;
     text-align: center;
-    color: rgb(119, 25, 33);
 }
 .widget_right-side--graph {
     padding-top: 0px;
@@ -89,16 +73,12 @@ body {
     border-top: 1px solid rgb(119, 25, 33);
 }
 .widget_right-side--future-temperature{
-  padding-left: 0px;
-  margin-top: 0;
   margin-bottom: 0;
 }
 .widget_right-side--day {
-  text-align: center;
   padding-top: 24px;
   padding-bottom: 0;
   margin-top: 0px;
-  color: rgb(119, 25, 33);
 }
 .widget_right-side--icon {
     background: url(../img/icons/css_sprites.png) no-repeat;
@@ -128,12 +108,12 @@ body {
     padding-bottom: 12px;
     padding-top: 12px;
 }
-@media (max-width:767px){
-  .widget.container{
-    width: 290px;
-    height: auto;
-    position: static;
-    transform: translate(0, 0);
-    margin: 0 auto;
+@media (min-width:767px){
+  .widget.container {
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      width: 580px;
+      height: 459px;
   }
 }

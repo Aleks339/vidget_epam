@@ -14,38 +14,30 @@
   src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-html{
-  height: 100%;
-}
 body{
   background: url("../img/bg_tokyo.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
-  margin: 0;
   font-family: 'Dosis', sans-serif;
+  color: rgb(119, 25, 33);
+  text-align: center;
 }
-.widget {
-  background-repeat: no-repeat;
-  background-size: cover;
+.widget{
+  padding: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  width: 580px;
+  top: 20%;
   height: 440px;
 }
 .widget_left-side{
   background-image: url("../img/div_tokyo.jpg");
-  width: 50%;
   float: left;
+  border: 1px solid rgba(46, 28, 37, 0.89);
+  box-sizing: border-box;
 }
 .widget_right-side{
   background-color: white;
-  width: 50%;
   height: 100%;
-  float: right;
-  padding: 12px 40px 40px 40px;
+  float: left;
+  padding-right: 6px;
   box-sizing: border-box;
 }
 .widget_left-side--sun-wrapper{
@@ -54,37 +46,23 @@ body{
 }
 .widget_left-side--rect-brown{
   background-color: rgba(46, 28, 37, 0.89);
-  margin-left: 0;
-  margin-top: 0;
-  width: 290px;
   height: 71px;
   font-size: 34px;
   color: rgb(255, 255, 255);
   line-height: 1.333;
-  text-align: center;
-  vertical-align: middle;
   padding-top: 23px;
 }
 .widget_left-side--rect-red{
   background-color: rgba(119, 25, 33, 0.89);
-  margin-left: 0;
-  margin-top: 0;
-  width: 290px;
   height: 74px;
   font-size: 21px;
   word-spacing: 1px;
-  letter-spacing: 0px;
   color: rgb(255, 255, 255);
   line-height: 2.182;
-  text-align: center;
-  vertical-align: middle;
   padding-top: 29px;
 }
 .widget_right-side--temperature{
-  font-size: 100px;
-  font-weight: 200;
-  font-style: normal;
-  color: rgb(119, 25, 33);
+  font-size: 80px;
 }
 .widget_right-side--graph{
   padding-top: 16px;
@@ -111,9 +89,7 @@ body{
 }
 .widget_right-side--day{
   float: left;
-  text-align: center;
   margin-top: 5px;
-  color: rgb(119, 25, 33);
   width: 50px;
   margin-right: 30px;
 }
@@ -134,27 +110,50 @@ body{
   word-spacing: -2px;
   color: black;
 }
+.clearfix {
+    overflow-y: auto;
+}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-@media (max-width:700px){
-  body{
-    width:100%;
+@media (min-width:250px) {
+  .widget {
+    left: 10%;
   }
-  .widget{
-    width: 290px;
-    height: auto;
-    position: static;
-    transform: translate(0, 0);
-    margin: 0 auto;
+}
+@media (min-width:300px) {
+  .widget {
+    left: 20%;
   }
-  .widget_right-side{
-    width:100%;
-    float: left;
+}
+@media (min-width:1150px) {
+  .widget {
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
   }
   .widget_left-side{
-    width:100%;
+    float: left;
+  }
+  .widget_right-side{
+    float: left;
+    padding: 12px 40px 40px 40px;
+  }
+  .widget_left-side--rect-red{
+      width: 290px;
+  }
+  .widget_right-side--temperature{
+    font-size: 100px;
+  }
+  .clearfix {
+      overflow: hidden;
+  }
+  .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
   }
 }
