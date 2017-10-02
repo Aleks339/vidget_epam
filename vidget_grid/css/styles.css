@@ -28,11 +28,14 @@ body{
   display: grid;
   left:0;
   top:0;
+  -ms-grid-rows: 100%; /*for IE;*/
+  -ms-grid-columns: 50% 50%; /*for IE;*/
   grid-template-rows: 100%;
   grid-template-columns: 50% 50%;
 }
 .widget_left-side{
   background-image: url("../img/div_tokyo.jpg");
+  -ms-grid-column:1; /*for IE*/
   grid-column-start: 1;
   width: 290px;
   height: 438px;
@@ -41,6 +44,7 @@ body{
 }
 .widget_right-side{
   background-color: white;
+  -ms-grid-column: 2; /*for IE*/
   grid-column-start: 2;
   width: 290px;
   height: 100%;
@@ -83,6 +87,8 @@ body{
   list-style: none;
   padding: 0;
   display: grid;
+  -ms-grid-rows:  100%; /*for IE;*/
+  -ms-grid-columns: 33% 33% 33%; /*for IE;*/
   grid-template-rows: 100%;
   grid-template-columns: 33% 33% 33%;
 }
@@ -102,6 +108,18 @@ body{
   margin-top: 5px;
   width: 50px;
 }
+.widget_right-side--day1{
+  grid-column-start: 1;
+  -ms-grid-column: 1; /*for IE*/
+}
+.widget_right-side--day2{
+  grid-column-start: 2;
+  -ms-grid-column: 2; /*for IE*/
+}
+.widget_right-side--day3{
+  grid-column-start: 3;
+  -ms-grid-column: 3; /*for IE*/
+}
 .widget_right-side--week{
   border-bottom: 1px solid rgb(119, 25, 33);
   padding-bottom: 12px;
@@ -119,6 +137,8 @@ body{
 @media (min-width:780px){
   .widget {
     display: grid;
+    -ms-grid-columns: 50% 50%; //for IE
+    -ms-grid-rows: 100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     left: 27%;
@@ -127,8 +147,11 @@ body{
   }
   .widget_left-side{
     grid-column-start: 1;
+    -ms-grid-column: 1; /*for IE*/
+
   }
   .widget_right-side{
     grid-column-start: 2;
+    -ms-grid-column: 2; /*for IE*/
   }
 }
