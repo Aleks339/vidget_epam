@@ -21,16 +21,24 @@ body{
   color: rgb(119, 25, 33);
   text-align: center;
 }
+.widget-wrapper{
+  width: 290px;
+}
 .widget{
   padding: 20px;
   height: 440px;
   width: 100%;
   position: relative;
+  left: 100%;
   top: 20%;
+  margin:auto;
 }
 .widget_left-side{
   background-image: url("../img/div_tokyo.jpg");
   float: left;
+  width: 100%;
+  position: relative;
+  left: -100%;
   border-right: 1px solid rgba(46, 28, 37, 0.89);
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
