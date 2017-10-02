@@ -38,8 +38,9 @@ body{
   -ms-grid-column:1; /*for IE*/
   grid-column-start: 1;
   width: 290px;
-  height: 438px;
-  border: 1px solid rgba(46, 28, 37, 0.89);
+  height: 100%;
+  border-right: 1px solid rgba(46, 28, 37, 0.89);
+  border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
 .widget_right-side{
@@ -53,12 +54,10 @@ body{
   height: 438px;
 }
 .widget_left-side--sun-wrapper{
-  height: 241px;
   background: url(../img/icons/sun_white.png) center no-repeat;
 }
 .widget_left-side--rect-brown{
   background-color: rgba(46, 28, 37, 0.89);
-  height: 71px;
   font-size: 34px;
   color: rgb(255, 255, 255);
   line-height: 1.333;
@@ -66,7 +65,6 @@ body{
 }
 .widget_left-side--rect-red{
   background-color: rgba(119, 25, 33, 0.89);
-  height: 74px;
   font-size: 21px;
   word-spacing: 1px;
   color: rgb(255, 255, 255);

@@ -16,11 +16,8 @@
 }
 body {
     display: flex;
-    -webkit-display: it-box; /*For Safari */
     justify-content: center;
-    -webkit-box-pack:center; /*For Safari */
     align-items: center;
-    -webkit-box-align:center; /*For Safari */
     background: url("../img/bg_tokyo.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: Dosis, sans-serif;
@@ -30,37 +27,39 @@ body {
 }
 .widget{
   display: flex;
-  display: -webkit-box; /*For Safari */
   flex-direction: column;
-  -webkit-box-orient: vertical; /*For Safari */
   height: 800px;
 }
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
     height: 100%;
+    width: 50%;
     display: flex;
-    display: -webkit-box; /*For Safari */
     flex-direction: column;
-    -webkit-box-orient: vertical; /*For Safari */
-    border: 1px solid rgba(46, 28, 37, 0.89);
+    border-right: 1px solid rgba(46, 28, 37, 0.89);
+    border-radius: 4px 0 0 4px;
     box-sizing: border-box;
 }
 .widget_left-side--sun-wrapper {
-    height: 241px;
     background: url(../img/icons/sun_white.png) center center no-repeat;
+    position: absolute;
+    bottom: 0;
 }
 .widget_left-side--rect-brown {
     background-color: rgba(46, 28, 37, 0.89);
-    height: 71px;
     font-size: 34px;
     color: rgb(255, 255, 255);
     line-height: 1.333;
     padding-top: 23px;
+    position: absolute;
+    bottom: 0;
 }
 .widget_left-side--rect-red {
     background-color: rgba(119, 25, 33, 0.89);
     width: 290px;
-    height: 74px;
+    position: relative;
+    top: 364px;
+    width: 100%;
     font-size: 21px;
     word-spacing: 1px;
     color: rgb(255, 255, 255);
@@ -69,10 +68,9 @@ body {
 }
 .widget_right-side {
     background-color: white;
+    width: 50%;
     box-sizing: border-box;
     flex-direction: column;
-    -webkit-box-orient: vertical; /*For Safari */
-
     padding: 12px 40px 40px;
 }
 .widget_right-side--temperature {
@@ -89,9 +87,7 @@ body {
 }
 .widget_right-side--future-temperature {
     display: flex;
-    display: -webkit-box; /*For Safari */
     justify-content: space-around;
-    -webkit-box-pack:justify; /*For Safari */
     padding-left: 1px;
     list-style-type: none;
 }
@@ -124,9 +120,7 @@ body {
 @media (min-width:700px) {
   .widget {
     display: flex;
-    display: -webkit-box; /*For Safari */
     flex-direction: row;
-    -webkit-box-orient: horizontal; /*For Safari */
     height: 438px;
   }
 }
