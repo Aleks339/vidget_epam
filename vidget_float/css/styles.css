@@ -21,25 +21,16 @@ body{
   color: rgb(119, 25, 33);
   text-align: center;
 }
-.widget-wrapper{
-  width: 290px;
-}
 .widget{
   padding: 20px;
   height: 440px;
-}
-.widget_float-wrapper{
   width: 100%;
   position: relative;
   top: 20%;
-  left: 100%;
 }
 .widget_left-side{
   background-image: url("../img/div_tokyo.jpg");
   float: left;
-  width: 100%;
-  position: relative;
-  left: -100%;
   border-right: 1px solid rgba(46, 28, 37, 0.89);
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
@@ -53,10 +44,12 @@ body{
 }
 .widget_left-side--sun-wrapper{
   background: url(../img/icons/sun_white.png) center no-repeat;
+  height: 241px;
 }
 .widget_left-side--rect-brown{
   background-color: rgba(46, 28, 37, 0.89);
   font-size: 34px;
+  height: 71px;
   color: rgb(255, 255, 255);
   line-height: 1.333;
   padding-top: 23px;
@@ -64,6 +57,7 @@ body{
 .widget_left-side--rect-red{
   background-color: rgba(119, 25, 33, 0.89);
   font-size: 21px;
+  height: 74px;
   word-spacing: 1px;
   color: rgb(255, 255, 255);
   line-height: 2.182;
@@ -123,26 +117,18 @@ body{
   font-size: 0;
   overflow: hidden;
 }
-@media (min-width:250px) {
-  .widget {
-    left: 10%;
-  }
-}
-@media (min-width:300px) {
-  .widget {
-    left: 20%;
-  }
-}
 @media (min-width:1150px) {
+  .widget-wrapper{
+    width: 580px;
+  }
   .widget_left-side{
-    float: left;
+    width:50%;
   }
   .widget_right-side{
-    float: left;
-    padding: 12px 40px 40px 40px;
+    width:50%;
   }
   .widget_right-side--temperature{
-    font-size: 100px;
+    font-size: 99px;
   }
   .clearfix::after {
     clear: both;
