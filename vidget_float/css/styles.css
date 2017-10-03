@@ -25,18 +25,16 @@ body{
   width: 290px;
 }
 .widget{
-  padding: 20px;
-  height: 440px;
   width: 100%;
   position: relative;
   left: 100%;
   top: 20%;
-  margin:auto;
+  margin: auto;
 }
 .widget_left-side{
   background-image: url("../img/div_tokyo.jpg");
+  width: 50%;
   float: left;
-  width: 100%;
   position: relative;
   left: -100%;
   border-right: 1px solid rgba(46, 28, 37, 0.89);
@@ -46,6 +44,7 @@ body{
 .widget_right-side{
   background-color: white;
   height: 100%;
+  width: 50%;
   float: left;
   padding-right: 6px;
   box-sizing: border-box;
@@ -128,13 +127,24 @@ body{
 }
 @media (min-width:1150px) {
   .widget-wrapper{
-    width: 580px;
+    width: 290px;
+  }
+  .widget{
+    width: 100%;
+    position: relative;
+    left: 100%;
+    top: 20%;
+    margin: auto;
   }
   .widget_left-side{
-    width:50%;
+    width:100%;
+    float: left;
+    position: relative;
+    left: -100%;
   }
   .widget_right-side{
-    width:50%;
+    width: 100%;
+    float: left;
   }
   .widget_right-side--temperature{
     font-size: 99px;
