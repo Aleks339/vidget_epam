@@ -30,7 +30,6 @@ body {
 }
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
-    border-right: 1px solid rgba(46, 28, 37, 0.89);
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
 }
@@ -116,5 +115,8 @@ body {
       left: 25%;
       width: 580px;
       height: 459px;
+  }
+  .widget_left-side{
+    border-right: 1px solid rgba(46, 28, 37, 0.89);
   }
 }

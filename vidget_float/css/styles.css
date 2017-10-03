@@ -33,7 +33,6 @@ body{
   background-image: url("../img/div_tokyo.jpg");
   width: 100%;
   float: left;
-  border-right: 1px solid rgba(46, 28, 37, 0.89);
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
@@ -136,6 +135,7 @@ body{
   .widget_left-side{
     width:50%;
     float: left;
+    border-right: 1px solid rgba(46, 28, 37, 0.89);
   }
   .widget_right-side{
     width: 50%;

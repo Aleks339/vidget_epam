@@ -42,7 +42,6 @@ body{
   grid-column-start: 1;
   grid-row-start: 1;
   height: 438px;
-  border-right: 1px solid rgba(46, 28, 37, 0.89);
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
@@ -58,6 +57,7 @@ body{
 }
 .widget_left-side--sun-wrapper{
   background: url(../img/icons/sun_white.png) center no-repeat;
+  height: 241px;
 }
 .widget_left-side--rect-brown{
   background-color: rgba(46, 28, 37, 0.89);
@@ -65,8 +65,7 @@ body{
   color: rgb(255, 255, 255);
   line-height: 1.333;
   padding-top: 23px;
-  position: relative;
-  top: 296px;
+  height: 71px;
 }
 .widget_left-side--rect-red{
   background-color: rgba(119, 25, 33, 0.89);
@@ -75,8 +74,7 @@ body{
   color: rgb(255, 255, 255);
   line-height: 2.182;
   padding-top: 29px;
-  position: relative;
-  top: 296px;
+  height: 74px;
 }
 .widget_right-side--temperature{
   font-size: 80px;
@@ -156,6 +154,7 @@ body{
   .widget_left-side{
     grid-column-start: 1;
     -ms-grid-column: 1; /*for IE*/
+    border-right: 1px solid rgba(46, 28, 37, 0.89);
 
   }
   .widget_right-side{
