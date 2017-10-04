@@ -16,10 +16,10 @@
 }
 body {
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    justify-content: center;
     -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     background: url("../img/bg_tokyo.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -37,7 +37,6 @@ body {
   }
   .widget_left-side {
       background-image: url(../img/div_tokyo.jpg);
-      height: 100%;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
@@ -54,7 +53,7 @@ body {
       font-size: 34px;
       color: rgb(255, 255, 255);
       line-height: 1.333;
-      padding-top: 23px;
+      padding-top: 25px;
   }
   .widget_left-side--rect-red {
       background-color: rgba(119, 25, 33, 0.89);
@@ -133,7 +132,7 @@ body {
   .widget_right-side{
     width: 290px;
   }
-  .widget_right-side--temperature {
-      font-size: 100px;
+  .widget_right-side--temperature{
+    font-size: 80px;
   }
 }
