@@ -27,6 +27,7 @@ body {
     margin: 0px;
     color: rgb(119, 25, 33);
     text-align: center;
+    height: 100%;
 }
   .widget{
      display: -ms-flexbox;
