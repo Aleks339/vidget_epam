@@ -40,21 +40,21 @@ body {
 .widget_left-side--rect-brown {
     background-color: rgba(46, 28, 37, 0.89);
     width: 290px;
-    height: 92px;
+    height: 85px;
     font-size: 34px;
     color: rgb(255, 255, 255);
     line-height: 1.333;
-    padding-top: 23px;
+    padding-top: 20px;
 }
 .widget_left-side--rect-red {
     background-color: rgba(119, 25, 33, 0.89);
     width: 290px;
-    height: 105px;
+    height: 85px;
     font-size: 21px;
     word-spacing: 1px;
     color: rgb(255, 255, 255);
     line-height: 2.182;
-    padding-top: 31px;
+    padding-top: 30px;
 }
 .widget_right-side {
     background-color: white;
