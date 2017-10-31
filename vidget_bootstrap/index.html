@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>Tokyo</title>
+  <title>Weather in different cities</title>
 
   <script>
     document.createElement("section");
@@ -20,6 +20,11 @@
 </head>
 <body>
   <div class = "widget container">
+    <div class = "widget_input">
+        <div class = "widget_input--input-text">Search the weather in your city</div>
+        <input type = "seach" name = 'city' class = "widget_input--input-search">
+        <input type="submit" class = "widget_input--input-submit" value = "Search">
+    </div>
     <div class="row">
       <div class = "widget_left-side col-sm-6">
         <div class="row">
@@ -29,7 +34,7 @@
             Sunny
           </div>
           <div class = "col-sm-12 widget_left-side--rect-red">
-            Tokyo - Wednesday, July 31
+              <span class = "widget_left-side--city-name">Tokyo</span> - Wednesday, July 31
           </div>
         </div>
       </div>

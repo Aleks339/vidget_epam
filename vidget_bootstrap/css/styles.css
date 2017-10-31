@@ -28,6 +28,13 @@ body {
   transform: translate(0, 0);
   margin: 0 auto;
 }
+.widget_input{
+    margin:15px;
+}
+.widget_input--input-text{
+    font-size: 20px;
+    font-weight: bold;
+}
 .widget_left-side {
     background-image: url(../img/div_tokyo.jpg);
     border-radius: 4px 0 0 4px;
@@ -111,7 +118,7 @@ body {
 @media (min-width:767px){
   .widget.container {
       position: absolute;
-      top: 20%;
+      top: 15%;
       left: 25%;
       width: 580px;
       height: 459px;
