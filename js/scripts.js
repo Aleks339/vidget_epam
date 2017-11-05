@@ -29,7 +29,6 @@ textSubmit.addEventListener('click', function(){
           var divWithWeatherDescription = document.getElementsByClassName('widget_left-side--rect-brown')[0];
           divWithWeatherDescription.innerHTML = result.weather[0].main;
           var today = new Date(result.dt*1000);
-          console.log(today.getHours());
           var dateString = weekdays[today.getDay()] + ', ' + months[today.getMonth()] + ' ' + today.getDate();
           document.getElementsByClassName('widget_left-side--date')[0].innerHTML = dateString;
           var morningHoursIndex = (33 - today.getHours()) / 3;

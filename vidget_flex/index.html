@@ -14,6 +14,11 @@
 
 </head>
 <body>
+  <div class = "widget_input">
+      <div class = "widget_input--input-text">Search the weather in your city</div>
+      <input type = "search" name = 'city' class = "widget_input--input-search">
+      <input type="submit" class = "widget_input--input-submit" value = "Search">
+  </div>
   <div class="widget">
     <div class="widget_left-side">
       <div class="widget_left-side--sun-wrapper">
@@ -22,7 +27,8 @@
       Sunny
     </div>
       <div class="widget_left-side--rect-red">
-        Tokyo - Wednesday, July 31
+        <span class = "widget_left-side--city-name">Tokyo</span> -
+        <span class = "widget_left-side--date">Wednesday, July 31</span>
       </div>
     </div>
 
@@ -37,48 +43,46 @@
 
         <li class="widget_right-side--day">
           <div class="widget_right-side--sun widget_right-side--icon"></div>
-          <div class="widget_right-side--week">
+          <div class="widget_right-side--week1">
             Thu
           </div>
-          <div class="widget_right-side--morning-temperature">
+          <div class="widget_right-side--morning-temperature1">
             28 °C
           </div>
-          <div class="widget_right-side--evening-temperature">
+          <div class="widget_right-side--evening-temperature1">
             18 °C
           </div>
         </li>
 
         <li class="widget_right-side--day">
           <div class="widget_right-side--sun-and-cloud widget_right-side--icon"></div>
-          <div class="widget_right-side--week">
+          <div class="widget_right-side--week2">
             Fri
           </div>
-            <div class="widget_right-side--morning-temperature">
+            <div class="widget_right-side--morning-temperature2">
               22 °C
             </div>
-            <div class="widget_right-side--evening-temperature">
+            <div class="widget_right-side--evening-temperature2">
               20 °C
             </div>
         </li>
 
         <li class="widget_right-side--day">
           <div class="widget_right-side--sun-and-cloud widget_right-side--icon"></div>
-          <div class="widget_right-side--week">
+          <div class="widget_right-side--week3">
             Sat
           </div>
-          <div class="widget_right-side--morning-temperature">
+          <div class="widget_right-side--morning-temperature3">
             30 °C
           </div>
-          <div class="widget_right-side--evening-temperature">
+          <div class="widget_right-side--evening-temperature3">
             27 °C
           </div>
         </li>
       </ul>
-
+    </div>
     </div>
 
-    </div>
-
-
+<script src="../js/scripts.js"></script>
 
 </body></html>

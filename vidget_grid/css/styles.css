@@ -125,16 +125,16 @@ body{
   grid-column-start: 3;
   -ms-grid-column: 3; /*for IE*/
 }
-.widget_right-side--week{
+.widget_right-side--week1,  .widget_right-side--week2, .widget_right-side--week3{
   border-bottom: 1px solid rgb(119, 25, 33);
   padding-bottom: 12px;
   padding-top: 12px
 }
-.widget_right-side--morning-temperature{
+.widget_right-side--morning-temperature1,  .widget_right-side--morning-temperature2,.widget_right-side--morning-temperature3{
   padding-top: 12px;
   word-spacing: -2px;
 }
-.widget_right-side--evening-temperature{
+.widget_right-side--evening-temperature1,  .widget_right-side--evening-temperature2, .widget_right-side--evening-temperature3{
   padding-top: 8px;
   word-spacing: -2px;
   color: black;
